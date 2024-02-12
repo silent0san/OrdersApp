@@ -9,3 +9,4 @@ case $1 in
   docker-compose -f docker-compose.yml down --rmi local
   ;;
 esac
+
