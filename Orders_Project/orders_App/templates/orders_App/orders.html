@@ -1,0 +1,23 @@
+{% extends "orders_App/base.html" %}
+
+{% block title %}Create an Account {% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<table class="table table-striped table-hover">
+    <tr>
+        <th>nazwa</th>
+        <th>cena</th>
+        <th>zamówione w dniu</th>
+    </tr>
+    {% for dish in all_dishes%}
+    <tr>
+        <td>{{dish.name}}</td>
+        <td>{{dish.price}}</td>
+        <td>{{dish.created_date}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

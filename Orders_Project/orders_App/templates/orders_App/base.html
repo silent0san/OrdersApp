@@ -44,12 +44,11 @@
 <body>
     <div class="sidenav">
         {% if user.is_authenticated %}
-            <a href="/">Home</a>
-            <a href="/meetings">Meetings</a>
-            <a href="/add_meeting">Add new meeting</a>
-            <a href="/my_meetings">My meetings</a>
-            <a href="/5">Settings</a>
-            <a href="{% url 'logout' %}">Log Out</a>
+            <a href="/">Strona główna</a>
+            <a href="/my_order">Moje zamówienie</a>
+            <a href="/group_order">Zamówienie grupowe</a>
+            <a href="/summary">Podsumowanie</a>
+            <a href="{% url 'logout' %}">Wyloguj się</a>
         {% else %}
             <a href="/">Strona główna</a>
             <a href="/login">Zaloguj się</a>

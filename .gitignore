@@ -1,2 +1,4 @@
 .idea/
 __pycache__/
+sh.exe.stackdump
+Orders_Project/orders_App/migrations/0001_initial.py
